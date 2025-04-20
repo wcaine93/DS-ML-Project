@@ -15,6 +15,7 @@ This project is intended to produce a machine learning model to capable of accur
 ## Data
 The [project_data.csv](src/data/Project_Data.csv) dataset of 450 records with features of students' ages, genders, how many days per month they drink, and if they have ever overdrawn their checking account.
 ### Features
+#### Raw Data
 <table><thead>
   <tr>
     <td>Age</td>
@@ -23,3 +24,8 @@ The [project_data.csv](src/data/Project_Data.csv) dataset of 450 records with fe
     <td>Overdrawn</td>
   </tr></thead>
 </table>
+
+#### Cleaned Data
+| Age | Gender | Gender_Male | Gender_Female | DaysDrink | Overdrawn |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+| `int > 0` | `string 'Male' or 'Female'` | `int 0 or 1` | `int 0 or 1` | `1 <= int <= 31` | `int 0 or 1` |
