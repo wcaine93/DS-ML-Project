@@ -6,7 +6,7 @@ Final project in the last month of Data Science/Machine Learning class
 This project is intended to produce a machine learning model to capable of accurately predicting if a student has ever overdrawn their checking account based on their age, gender, and how many days per month they drink (see [Features](#features)).
 
 ### Project Goals
-- [ ] Explore and clean the dataset to prepare it for modelling
+- [x] Explore and clean the dataset to prepare it for modelling
 - [ ] Test different machine learning models to predict if overdrawn
 - [ ] Compare the performance of the different models and choose the best one
 
@@ -16,6 +16,7 @@ This project is intended to produce a machine learning model to capable of accur
 The [project_data.csv](src/data/Project_Data.csv) dataset of 450 records with features of students' ages, genders, how many days per month they drink, and if they have ever overdrawn their checking account.
 ### Features
 #### Raw Data
+450 records of
 <table><thead>
   <tr>
     <td>Age</td>
@@ -26,6 +27,8 @@ The [project_data.csv](src/data/Project_Data.csv) dataset of 450 records with fe
 </table>
 
 #### Cleaned Data
-| Age | Gender | Gender_Male | Gender_Female | DaysDrink | Overdrawn |
+435 records of
+| Gender | Gender_Male | Gender_Female | Age | DaysDrink | Overdrawn |
 |:-:|:-:|:-:|:-:|:-:|:-:|
-| `int > 0` | `string 'Male' or 'Female'` | `int 0 or 1` | `int 0 or 1` | `1 <= int <= 31` | `int 0 or 1` |
+| `string object` | `int64` | `int64` | `int64` | `category` | `int64` |
+| `'Male' or 'Female'` | `0 or 1` | `0 or 1` | `> 0` | `'None', 'Low', 'Moderate' or 'High'` | `0 or 1` |
