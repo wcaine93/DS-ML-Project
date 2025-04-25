@@ -7,8 +7,11 @@ This project is intended to produce a machine learning model to capable of accur
 
 ### Project Goals
 - [x] Explore and clean the dataset to prepare it for modelling
-- [ ] Test different machine learning models to predict if overdrawn
-- [ ] Compare the performance of the different models and choose the best one
+- [x] Test different machine learning models to predict if overdrawn
+- [x] Compare the performance of the different models and choose the best one
+
+## Results
+The Decision Tree model turned out to be the best fit, with an 85% accuracy.
 
 </br>
 
